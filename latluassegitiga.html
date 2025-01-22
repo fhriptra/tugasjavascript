@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitung Luas Segitiga</title>
+</head>
+<body>
+  <form action="" method="post" onsubmit="return false">
+    <p> Masukan Alas Segitiga</p>
+    <input type="number" name="" id="alas">
+    <p> Masukan Tinggi Segitiga</p> 
+    <input type="number" name="" id="tinggi">
+  </form>
+  <button id="Kirim" onclick="hitung()">Kirim</button>
+  <p id="hasil"></p>
+  <script>
+    function hitung() {
+      let alas = document.getElementById('alas').value 
+      let tinggi = document.getElementById('tinggi').value 
+      let luas = 0.5 * alas * tinggi
+      document.getElementById('hasil').innerHTML = luas
+    }
+  </script>
+</body>
+</html>

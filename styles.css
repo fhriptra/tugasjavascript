@@ -1,0 +1,53 @@
+#tugas1 {
+  width: 20vw;
+  height: 5vw;
+  margin-top: 1vh;
+  background-color: blue; /* Warna biru */
+  color: white; /* Warna teks putih */
+  border: none; /* Tanpa border */
+  border-radius: 15px; /* Sudut membulat */
+  padding: 10px 20px; /* Jarak dalam tombol */
+  font-size: 16px; /* Ukuran font */
+  cursor: pointer; /* Kursor saat hover */
+  transition: background-color 0.3s; /* Efek transisi */
+  text-decoration: none;
+}
+#tugas {
+  width: 20vw;
+  height: 5vw;
+  margin-top: 1vh;
+  background-color: blue; /* Warna biru */
+  color: white; /* Warna teks putih */
+  border: none; /* Tanpa border */
+  border-radius: 15px; /* Sudut membulat */
+  padding: 10px 20px; /* Jarak dalam tombol */
+  font-size: 16px; /* Ukuran font */
+  cursor: pointer; /* Kursor saat hover */
+  transition: background-color 0.3s; /* Efek transisi */
+  text-decoration: none;
+}
+li {
+  margin-top: 3vh;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Poppins;
+}
+.list {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 0;
+  background-color: rgb(99, 161, 255);
+  border-radius: 50px;
+}
+body {
+  display: flex; /* Menggunakan Flexbox */
+  justify-content: center; /* Memusatkan secara horizontal */
+  align-items: center; /* Memusatkan secara vertikal */
+  height: 80vh; /* Mengatur tinggi body menjadi 100% dari viewport */
+  margin: 0; /* Menghilangkan margin default */
+  font-family: 'Poppins', sans-serif; /* Mengatur font */
+  background-color: #fdfff4; /* Warna latar belakang */
+}

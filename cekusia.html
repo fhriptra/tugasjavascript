@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" id="cekusia" method="post" onsubmit="return false">
+    <h1>Cek Usia</h1>
+    <p>Masukan Nama : </p>
+    <input type="text" name="" id="nama">
+    <p>Usia :</p>
+    <input type="number" name="" id="usia" max="100" required oninput="validasiUsia()">
+    <button onclick="cek()">Cek Status</button>
+  </form>
+  <p id="hasil"></p>
+  
+  <script>
+    function validasiUsia() {
+      let usiaInput = document.getElementById('usia');
+      if (usiaInput.value > 100) {
+        usiaInput.value = 100; // Set nilai maksimum ke 100 jika lebih
+      }
+    }
+    function cek() {
+      let nama = document.getElementById('nama').value
+      let usia = document.getElementById('usia').value
+      if (usia >= 17 && usia <= 60) {
+        document.getElementById('hasil').innerHTML = `${nama}, kamu boleh menonton`
+      } else {
+        document.getElementById('hasil').innerHTML = nama + ", kamu tidak boleh menonton"
+      }
+    }
+  </script>
+</body>
+</html>

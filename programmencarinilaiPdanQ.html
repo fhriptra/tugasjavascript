@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" id="cekvar" method="post" onsubmit="return false">
+    <p>Masukan X : </p>
+    <input type="text" name="" id="varx">
+    <p>Masukan Y :</p>
+    <input type="number" name="" id="vary" onchange="cek()"> <br>
+  </form>
+  <p id="p"></p>
+  <p id="q"></p>
+  <script>
+    function cek() {
+      let X = parseInt(document.getElementById('varx').value)
+      let Y = parseInt(document.getElementById('vary').value)
+      let P = X + Y
+      document.getElementById('p').innerHTML = "Nilai P adalah " + P
+      if (P >= 0) {
+        var Q = X * Y
+      } else { 
+        Q = X / Y 
+      }
+      document.getElementById('q').innerHTML = "Nilai Q adalah " + Q
+  }
+  </script>
+</body>
+</html>
