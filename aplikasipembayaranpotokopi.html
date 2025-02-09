@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <form action="" id="cekusia" method="post" onsubmit="return false">
+        <h1>Aplikasi Pembayaran Fotokopi :)</h1>
+        <form action="" onsubmit="return false">
+            <p>Pilih Anggota : </p>
+            <input type="checkbox" name="true" id="pelanggan" onclick="toggleCheckbox(this, 'bukanpelanggan')">
+            <label for="pelanggan">Pelanggan</label><br>
+            <input type="checkbox" name="false" id="bukanpelanggan" onclick="toggleCheckbox(this, 'pelanggan')">
+            <label for="bukanpelanggan">Bukan Pelanggan</label>
+        </form>
+        <label for="jumlahfotocopy">Jumlah Fotocopy</label>
+        <input type="number" name="" id="jumlahfotocopy"><br>
+        <button id="Kirim" onclick="hitung()">Kirim</button>
+    </form>
+  <p id="hasil"></p>
+
+  <script>
+    function toggleCheckbox(currentCheckbox, otherCheckboxId) {
+        const otherCheckbox = document.getElementById(otherCheckboxId);
+        if (currentCheckbox.checked) {
+            otherCheckbox.checked = false; // Uncheck the other checkbox
+        }
+    }
+</script>
+<script>
+    function hitung() {
+        const pelanggan = document.getElementById('pelanggan').checked
+        const bukanpelanggan = document.getElementById('bukanpelanggan').checked
+        let hargafotocopy;
+        let jumlahfotocopy = document.getElementById('jumlahfotocopy').value
+        if (pelanggan) {
+            hargafotocopy = 75;
+        } else if(bukanpelanggan && jumlahfotocopy <= 100) {
+            hargafotocopy = 100;
+        } else {
+            hargafotocopy = 85;
+        }
+        let TH = jumlahfotocopy * hargafotocopy
+        let THkoma= TH.toLocaleString('en-US');
+        if (pelanggan) {
+            document.getElementById('hasil').innerHTML = `Status : Pelanggan<br>
+            Jumlah Fotocopy : ${jumlahfotocopy}<br>
+            Total Bayar : Rp. ${THkoma}`
+        } else {
+            document.getElementById('hasil').innerHTML = `Status : Bukan Pelanggan<br>
+            Jumlah Fotocopy : ${jumlahfotocopy}<br>
+            Total Bayar : Rp. ${THkoma}`
+        }
+    }
+</script>
+</body>
+</html>

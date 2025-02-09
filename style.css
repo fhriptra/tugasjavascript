@@ -1,6 +1,6 @@
 #Kirim {
-  width: 8vw;
-  height: 2vw;
+  width: 9vw;
+  height: 3vw;
   margin-top: 1vh;
   background-color: blue; /* Warna biru */
   color: white; /* Warna teks putih */
@@ -10,6 +10,8 @@
   font-size: 16px; /* Ukuran font */
   cursor: pointer; /* Kursor saat hover */
   transition: background-color 0.3s; /* Efek transisi */
+  font-family: Poppins;
+  font-weight: bold;
 }
 p {
   margin-top: 1vh;
