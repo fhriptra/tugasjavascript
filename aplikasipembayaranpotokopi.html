@@ -37,11 +37,11 @@
     function hitung() {
         const pelanggan = document.getElementById('pelanggan').checked
         const bukanpelanggan = document.getElementById('bukanpelanggan').checked
-        let hargafotocopy;
+        var hargafotocopy;
         let jumlahfotocopy = document.getElementById('jumlahfotocopy').value
         if (pelanggan) {
             hargafotocopy = 75;
-        } else if(bukanpelanggan && jumlahfotocopy <= 100) {
+        } else if (bukanpelanggan && jumlahfotocopy <= 100) {
             hargafotocopy = 100;
         } else {
             hargafotocopy = 85;
