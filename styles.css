@@ -3,7 +3,8 @@ body {
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  height: 100vh; 
+  height: 100vh;
+  min-height: 70vh; 
   margin: 0; 
   font-family: 'Poppins', sans-serif; 
   background-color: #fdfff4; 
@@ -30,7 +31,7 @@ body {
 }
 
 .navbarmenu a:hover {
-  color: rgb(36, 36, 36);
+  color: rgb(48, 23, 0);
 }
 
 .list {
@@ -46,20 +47,39 @@ body {
   position: relative;
 }
 
+.skibiditoilet_1 {
+  margin-top: 45vh;
+}
+
 .skibiditoilet_1 h1 {
   font-family: Poppins;
   font-weight: bold;
   font-size: 3em;
   margin-top: 35vh;
-  margin-right: 20vw;
+  margin-left: 2vw;
   position: relative;
+}
+
+.chloe {
+  width: 35%;
+  position: absolute;
+  margin-left: 20vw;
+  margin-bottom: 15vh;
 }
 
 .cameraman {
   font-family: Quicksand;
   font-size: 1.5em;
-  margin-bottom: 50vh;
-  margin-right: 20vw;
+  margin-bottom: 3vh;
+  margin-left: 2vw;
+  position: relative;
+}
+
+.cameraman2 {
+  font-family: Quicksand;
+  font-size: 1.5em;
+  margin-bottom: 80vh;
+  margin-left: 2vw;
   position: relative;
 }
 
@@ -107,4 +127,61 @@ button {
 
 button:hover {
   background-color: darkblue;
+}
+.search-bar {
+  width: 80%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.tugas-list {
+  list-style: none;
+  padding: 0;
+  width: 100%; /* Mengatur lebar daftar tugas agar sesuai dengan lebar kotak */
+  max-height: 50vh; /* Mengatur tinggi maksimum untuk daftar tugas */
+  overflow-y: auto; /* Menambahkan scroll vertikal jika konten melebihi tinggi maksimum */
+}
+
+.tugas-list li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tugas-list a {
+  text-decoration: none;
+  color: #321300;
+  font-family: Poppins;
+  font-weight: 500;
+  flex-grow: 1; /* Membuat link mengambil ruang yang tersedia */
+  margin-right: 10px; /* Memberikan jarak antara link dan tombol */
+}
+
+.tugas-list a:hover {
+  color: blue;
+}
+
+.tugas-button {
+  background-color: #8B4513; /* Warna coklat */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tugas-button:hover {
+  background-color: #6F4C3E; /* Warna coklat lebih gelap saat hover */
+}
+
+.tugas-title {
+  color: #321300; /* Warna teks judul */
+  font-family: Poppins;
+  font-weight: 500;
+  margin-right: 10px; /* Memberikan jarak antara judul dan tombol */
 }

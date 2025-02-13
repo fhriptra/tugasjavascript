@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Tugas-Tugas Fahri</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Kalau menggunakan file terpisah -->
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
   </style>
-</head>
+</head> 
 <body>
   <div class="list">
+    <input type="text" id="searchBar" placeholder="Search Tugas..." class="search-bar">
+    <ul class="tugas-list">
+      <li>
+        <span class="tugas-title">Tugas 1: Judul Tugas 1</span>
+        <button class="tugas-button" onclick="window.location.href='tugas1.html'">Lihat Tugas</button>
+      </li>
+      <li>
+        <span class="tugas-title">Tugas 2: Judul Tugas 2</span>
+        <button class="tugas-button" onclick="window.location.href='tugas2.html'">Lihat Tugas</button>
+      </li>
+      <li>
+        <span class="tugas-title">Tugas 3: Judul Tugas 3</span>
+        <button class="tugas-button" onclick="window.location.href='tugas3.html'">Lihat Tugas</button>
+      </li>
+      <li>
+        <span class="tugas-title">Tugas 4: Judul Tugas 4</span>
+        <button class="tugas-button" onclick="window.location.href='tugas4.html'">Lihat Tugas</button>
+      </li>
+      <li>
+        <span class="tugas-title">Tugas 5: Judul Tugas 5</span>
+        <button class="tugas-button" onclick="window.location.href='tugas5.html'">Lihat Tugas</button>
+      </li>
+      <li>
+        <span class="tugas-title">Tugas 6: Judul Tugas 6</span>
+        <button class="tugas-button" onclick="window.location.href='tugas6.html'">Lihat Tugas</button>
+      </li>
+    </ul>
     <div class="navbar">
       <ol class="navbarmenu">
-        <a href="/index.html">About</a>
-        <a href="/tugas.html">Tugas</a>
+        <li><a href="index.html">About</a></li>
+        <li><a href="tugas.html">Tugas</a></li>
       </ol>
     </div>
   </div>
-  <img src="image1.png" alt="" srcset="" class="journal">
-  <img src="camera1.png" alt="" srcset="" class="camera">
+  <img src="image1.png" alt="Journal Image" class="journal">
+  <img src="camera1.png" alt="Camera Image" class="camera">
+  <script>
+    // JavaScript untuk filter tugas berdasarkan input search
+    document.getElementById('searchBar').addEventListener('keyup', function() {
+      const filter = this.value.toLowerCase();
+      const tugasItems = document.querySelectorAll('.tugas-list li');
+
+      tugasItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>
