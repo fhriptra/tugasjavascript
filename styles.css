@@ -173,6 +173,8 @@ button:hover {
   padding: 10px 15px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-family: Poppins;
+  font-weight: bold;
 }
 
 .tugas-button:hover {
