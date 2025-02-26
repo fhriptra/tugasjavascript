@@ -13,6 +13,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: 60% 60%;
+  overflow: hidden;
 }
 
 .navbarmenu {

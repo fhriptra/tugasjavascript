@@ -6,16 +6,11 @@
   <title>Document</title>
 </head>
 <body>
-  <p id="hasil"></p>
   <script>
-    let hasil = document.getElementById('hasil')
-    let a = 1 <= 6
-    let b = 1 <= a 
-    for (let a = 1; a <= 6; a++) {
-      for (let b = 1; b <= a; b++) {
-        hasil.innerHTML += `${a}`
-      }
+    function kali(panjang, lebar) {
+      return panjang * lebar
     }
+    console.log(kali(4, 3))
   </script>
 </body>
 </html>
