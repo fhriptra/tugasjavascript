@@ -13,8 +13,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: 60% 60%;
-  overflow: hidden;
-  overflow-x: hidden;
 }
 
 .navbarmenu {
@@ -37,8 +35,7 @@ body {
 }
 
 .list {
-  width: 90%;
-  max-width: 900px;
+  width: 45vh;
   height: 70vh;
   display: flex;
   flex-direction: column;
@@ -191,47 +188,23 @@ button:hover {
   margin-right: 10px; /* Memberikan jarak antara judul dan tombol */
 }
 @media (max-width: 1366px) {
-  .list {
-    width: 95%;
-    height: auto;
-    padding: 20px;
+  body {
+    font-size: 18px;
+    padding: 70px 20px 20px 20px;
   }
 
-  .skibiditoilet_1 {
-    margin-top: 20px;
+  nav {
+    height: 60px;
+    font-size: 16px;
   }
 
-  .skibiditoilet_1 h1 {
-    font-size: 2em;
-    margin-top: 0;
+  img.profile {
+    width: 160px;
+    height: 160px;
   }
 
-  .chloe {
-    width: 50%;
+  .box {
+    width: 90%;
     margin: 0 auto;
-    position: relative;
-    display: block;
-  }
-
-  .cameraman, .cameraman2 {
-    font-size: 1.2em;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-  }
-
-  .navbar {
-    width: 100%;
-    position: static;
-    margin: 20px 0 0 0;
-  }
-
-  .journal, .camera {
-    display: none; /* optional: hide decorations if screen is small */
-  }
-}
-@media (max-width: 768px) {
-  html {
-    font-size: 14px;
   }
 }
