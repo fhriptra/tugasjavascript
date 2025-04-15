@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+  min-height: 70vh; 
+  margin: 0; 
+  font-family: 'Poppins', sans-serif; 
+  background-color: #fdfff4; 
+  background-image: url("chloebackground.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 60% 60%;
+  overflow: hidden;
+}
+
+.navbarmenu {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbarmenu a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Poppins;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.navbarmenu a:hover {
+  color: rgb(48, 23, 0);
+}
+
+.list {
+  width: 45vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 30px;
+  box-shadow: 5px 5px 22.2px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.skibiditoilet_1 {
+  margin-top: 45vh;
+}
+
+.skibiditoilet_1 h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 1em;
+  margin-left: 2vw;
+  position: relative;
+}
+
+.chloe {
+  width: 35%;
+  position: absolute;
+  margin-left: 20vw;
+  margin-bottom: 15vh;
+}
+
+h1 {
+  margin-top: 55vh;
+}
+
+.cameraman {
+  font-family: Quicksand;
+  font-size: 1.2em;
+  margin-bottom: 3vh;
+  margin-left: 2vw;
+  position: relative;
+}
+
+.cameraman2 {
+  font-family: Quicksand;
+  font-size: 1.2em;
+  margin-bottom: 95vh;
+  margin-left: 2vw;
+  position: relative;
+}
+
+.navbar {
+  width: 45vw;
+  height: 64px;
+  background-color: #321300;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 5px 5px 22.2px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64vh;
+}
+
+.journal {
+  position: absolute;
+  z-index: 2;
+  margin-right: 45vw;
+  margin-bottom: 70vh;
+}
+
+.camera {
+  position: absolute;
+  z-index: 2;
+  margin-left: 45vw;
+  margin-top: 80vh;
+}
+
+button {
+  width: 20vw;
+  height: 5vw;
+  margin-top: 1vh;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+.search-bar {
+  width: 80%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.tugas-list {
+  list-style: none;
+  padding: 0;
+  width: 100%; /* Mengatur lebar daftar tugas agar sesuai dengan lebar kotak */
+  max-height: 50vh; /* Mengatur tinggi maksimum untuk daftar tugas */
+  overflow-y: auto; /* Menambahkan scroll vertikal jika konten melebihi tinggi maksimum */
+}
+
+.tugas-list li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tugas-list a {
+  text-decoration: none;
+  color: #321300;
+  font-family: Poppins;
+  font-weight: 500;
+  flex-grow: 1; /* Membuat link mengambil ruang yang tersedia */
+  margin-right: 10px; /* Memberikan jarak antara link dan tombol */
+}
+
+.tugas-list a:hover {
+  color: blue;
+}
+
+.tugas-button {
+  background-color: #8B4513; /* Warna coklat */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+.tugas-button:hover {
+  background-color: #6F4C3E; /* Warna coklat lebih gelap saat hover */
+}
+
+.tugas-title {
+  color: #321300; /* Warna teks judul */
+  font-family: Poppins;
+  font-weight: 500;
+  margin-right: 10px; /* Memberikan jarak antara judul dan tombol */
+}
